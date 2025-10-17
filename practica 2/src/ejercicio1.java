@@ -14,9 +14,7 @@ public class ejercicio1 {
         System.out.println("Introduce otro numero");
         int[] arrayInt = new int[10];
         for (int i = 0; i < arrayInt.length; i++) {
-
             arrayInt[i] = sc.nextInt();
-
             //Muestra por consola el indice y el valor al que corresponde.
         }
         for (int i = 0; i < arrayInt.length; i++) {
