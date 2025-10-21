@@ -17,7 +17,8 @@ public class ejercicio5 {
 
     //Relleno el array con números aleatorios de 0 y 9
         for (int i = 0; i < tamaño; i++) {
-            array[i] = rand.nextInt(10); // genera números entre 0 y 9
+            array[i] = (int)(Math.random()*10);
+            System.out.println();
         }
 
     }
