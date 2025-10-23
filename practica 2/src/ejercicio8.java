@@ -38,10 +38,10 @@ public class ejercicio8 {
         //calculamos la media de todas las alturas y la suma de ellas
         double media = (double) sumaAlt / (double) alt.length;
 
-        //creamos las dos variables que van a controlar cuantos por debajo y por encima de la media vamos a tener
+        //creamos las dos variables, una inferior y otra superior
         int inferior = 0;
         int superior = 0;
-        //Con un bucle recorriendo al estilo foreach vamos comparando si son mayores o menores que esa media
+        //Con un bucle vemos si son mayores o menores que la media
         for (double v : alt) {
             if (v < media) {
                 inferior++;
