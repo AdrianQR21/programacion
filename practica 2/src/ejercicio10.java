@@ -24,7 +24,7 @@ public class ejercicio10 {
         //busca el nombre en el array
         for (int i = 0; i < nombres.length; i++) {
 
-            //si lo encuentra muestra el estudiante y la nota
+            //si lo encuentra mostrará al estudiante y su nota
             if (estudiante.equals(nombres[i])) {
                 System.out.printf("La nota del estudiante %s es: %.2f", nombres[i], notas[i]);
                 break;
