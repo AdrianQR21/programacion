@@ -5,4 +5,4 @@ Repositorio de programación de Adrián Quirós Romero 1º DAW
 * **Apellidos:** Quirós Romero
 * **Correo electrónico:** adrianqr21@gmail.com
 * **Programación/**
-  * (practica2/)[src]
+  * practica2/[src]
