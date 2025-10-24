@@ -8,12 +8,14 @@ import java.util.Scanner;
 // ¿Serías capaz de hacerlo con un array BIdimensional?
 
 public class ejercicio10 {
-    public static void main(String[] args){
+    public static void main (String[] args){
         //definimos los array de nombres y notas
         Scanner sc = new Scanner(System.in);
         String[] nombres={"Adrián","Jaime","Ismael","Jose Manuel","Abelardo"};
         double[] notas={10,5,7,9,6.5,};
+
         //Definimos la variable y la posición del último estudiante
+
         String estudiante;
         int ultimoEst= nombres.length - 1;
 
