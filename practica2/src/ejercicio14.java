@@ -8,32 +8,47 @@ import java.util.Scanner;
 //Luego pida un nombre a buscar y diga si está en la lista o no, mostrando también en
 //qué posición se encuentra si existe.
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class ejercicio14 {
     public static void main(String[] args) {
-        //definimos donde vamos a guardar los nombres y la entrada de datos
+        // Definimos dónde vamos a guardar los nombres y la entrada de datos
         ArrayList<String> lista = new ArrayList<>();
-        Scanner s = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         String entrada;
 
-        //vamos dando nombres hasta que no sea igual a fin
+        // Vamos dando nombres hasta que no sea igual a "fin"
         do {
             System.out.println("Introduce un nombre (fin = salir)");
-            entrada = s.nextLine();
+            entrada = sc.nextLine();
 
-            //Si no es igual a fin entonces añadirá el nombre a la entrada
-            if (!entrada.equals("fin")){
+            // Si no es igual a "fin", entonces añadirá el nombre a la lista
+            if (!entrada.equals("fin")) {
                 lista.add(entrada);
             }
         } while (!entrada.equals("fin"));
 
-        //Imprimimos por pantalla el nombre que vamos a buscar
-        System.out.println("dime un nombre a buscar: ");
-        String entradaNom= s.nextLine();
+        // Pedimos el nombre a buscar
+        System.out.println("Dime un nombre a buscar: ");
+        String entradaNom = sc.nextLine();
 
-        if (lista.contains(entradaNom)){
-            System.out.printf("El nombre existe y se encuentra en la posición %d",lista.indexOf(entradaNom));
-        } else {
-            System.out.printf("El nombre %s no existe",entradaNom);
+        // Buscamos manualmente sin usar el contains
+        int posicion = -1;
+        for (int i = 0; i < lista.size(); i++) {
+            if (lista.get(i).equals(entradaNom)) {
+                posicion = i;
+                break;
+            }
         }
+
+        // /Imprimimos por pantalla el nombre que vamos a buscar
+        if (posicion != -1) {
+            System.out.printf("El nombre existe y se encuentra en la posición %d", posicion);
+        } else {
+            System.out.printf("El nombre %s no existe", entradaNom);
+        }
+
+
     }
 }
