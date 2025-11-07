@@ -1,77 +1,56 @@
-//Crear un programa que cuando se le introduzca números enteros rellene
-// un array de 6 filas por 10 columnas con números enteros positivos comprendidos
-// entre 0 y 1000 (ambos incluidos).
-// A continuación, el programa deberá:
-// dar la posición del número máximo y mínimo
-// la suma total de todas las filas y columnas
-// la suma de todas las columnas
-// la suma de todas las filas.
+import java.util.Scanner;
+
 public class ejercicio5 {
-    public static void main (String[] args){
-
-        int filas = 6;
-        int columnas = 10;
-        int[][] a = new int[filas][columnas];
-
-        // Rellenar array con números que estén entre el 0 y el 1000
-        for (int i = 0; i < filas; i++) {
-            for (int j = 0; j < columnas; j++) {
-                int aleatorio = (int) (Math.random()*1001);
-                a[i][j] = aleatorio;
+    public static void main(String[] args) {
+        int[][] Tabla = new int[6][10];
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < Tabla.length; i++) {
+            for (int j = 0; j < Tabla[i].length; j++) {
+                Tabla[i][j] = (int) (Math.random() * 1001);
             }
         }
-        int max = a[0][0];
-        int min = a[0][0];
-        int filaMax = 0;
-        int colMax = 0;
-        int filaMin = 0;
-        int colMin = 0;
-
-        // Calcular máximo, minimo y mostrar sus posciones
-        for (int i = 0; i < filas; i++) {
-            for (int j = 0; j < columnas; j++) {
-                if (a[i][j] > max) {
-                    max = a[i][j];
-                    filaMax = i;
-                    colMax = j;
+        int Maximo = Tabla[0][0];
+        int Minimo = Tabla[0][0];
+        int IndiceI_M = 0;
+        int IndiceJ_M = 0;
+        int IndiceI_m = 0;
+        int IndiceJ_m = 0;
+        int SumaI = 0;
+        int SumaJ = 0;
+        for (int i = 0; i < Tabla.length; i++) {
+            for (int j = 0; j < Tabla[i].length; j++) {
+                System.out.printf("%-10s", Tabla[i][j]);
+                SumaI += Tabla[i][j];
+            }
+            System.out.println();
+        }
+        for (int j = 0; j < Tabla[0].length; j++) {
+            for (int i = 0; i < Tabla.length; i++) {
+                SumaJ += Tabla[i][j];
+            }
+        }
+        for (int i = 0; i < Tabla.length; i++) {
+            for (int j = 0; j < Tabla[i].length; j++) {
+                if (Tabla[i][j]>Maximo){
+                    Maximo=Tabla[i][j];
+                    IndiceI_M = i;
+                    IndiceJ_M = j;
                 }
-                if (a[i][j] < min) {
-                    min = a[i][j];
-                    filaMin = i;
-                    colMin = j;
+            }
+        }
+        for (int i = 0; i < Tabla.length; i++) {
+            for (int j = 0; j < Tabla[i].length; j++) {
+                if (Tabla[i][j]<Minimo){
+                    Minimo=Tabla[i][j];
+                    IndiceI_m = i;
+                    IndiceJ_m = j;
                 }
             }
         }
-        System.out.println("Número máximo: " + max + " en posición [" + filaMax + "][" + colMax + "]");
-        System.out.println("Número mínimo: " + min + " en posición [" + filaMin + "][" + colMin + "]");
-
-        // Calcular la suma de cada fila y la suma total de las filas
-        System.out.println("Suma de cada fila:");
-        int sumaTotFil = 0;
-        for (int i = 0; i < filas; i++) {
-            int sumaFila = 0;
-            for (int j = 0; j < columnas; j++) {
-                sumaFila += a[i][j];
-            }
-            sumaTotFil += sumaFila;
-            System.out.println("Fila " + i + ": " + sumaFila);
-        }
-        System.out.println ("La suma total de las filas es: " + sumaTotFil);
-
-        // Calcular la suma de cada columna y la suma total de las columnas
-        System.out.println("Suma de cada columna: ");
-        int sumaTotCol = 0;
-        for (int j = 0; j < columnas; j++) {
-            int sumaCol = 0;
-            for (int i = 0; i < filas; i++) {
-                sumaCol += a[i][j];
-            }
-            sumaTotCol += sumaCol;
-            System.out.println("Columna " + j + ": " + sumaCol);
-        }
-        System.out.println ("La suma total de las columnas es: " + sumaTotCol);
-
-        // Calcular la suma total de filas y columnas
-        System.out.println ("La suma total de las filas y las columnas es: " + (sumaTotCol + sumaTotFil));
+        System.out.println("El numero máximo es: " + Maximo + " con la posición: " + "["+IndiceI_M+"]" + "["+IndiceJ_M+"]");
+        System.out.println("El numero minimo es: " + Minimo + " con la posición: " + "["+IndiceI_m+"]" + "["+IndiceJ_m+"]");
+        System.out.println("La suma de filas es: " + SumaI);
+        System.out.println("La suma de columnas es: " + SumaJ);
+        System.out.println("La suma de filas y columnas es: "+ (SumaI+SumaJ));
     }
 }
