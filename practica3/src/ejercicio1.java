@@ -6,33 +6,49 @@ public class ejercicio1 {
         // de tabla como se muestra en la figura.
 
         //definimos el array de tipo double, y poner el número 100 para sustituirlo por el espacio.
-        double[][] numeros = {
-                {0, 30, 2, 100, 100, 5},
-                {75, 100, 100, 100, 0, 100},
-                {100, 100, -2, 9, 100, 11}
+        double[][] doub = {
+                {0.0, 30.0, 2.0, 0.0, 0.0, 5.0},
+                {75.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+                {0.0, 0.0, -2.0, 9.0, 0.0, 11.0},
         };
-        //Imprimimos la primera fila
-            System.out.println("-------------------------------------------------------------------------------");
-        System.out.println("|Array num |Columna 0 | Columna 1 |Columna 2 |Columna 3 |Columna 4 |Columna 5 |");
-        //Recorremos el array bucle con la variante i
-        for (int i = 0; i < numeros.length; i++) {
-            System.out.println("|----------+----------+----------+----------+----------+----------+-----------|");
-            System.out.print("|Fila " + i + "    |");
-            //recorremos el array con un bucle con la variable j, para que dentro de cada fila se rellenen las columnas,
-            // y cada vez que se rellenen las columnas de una fila salte a la otra.
-            for(int j = 0; j < numeros[i].length; j++) {
-                //sustituye el 100 por un espacio
-                if (numeros[i][j] == 100) {
-                    System.out.print("         |");
-                    //si no hay 100 imprime los numeros normales.
-                    // el %9 hace que se cree 9 espacios y luego se ponga el numero
-                    // (si fuera %-9 el numero iria primero y los espacios a la derecha)
+
+        // Cabecera de columnas
+        System.out.print("-----------------");
+        for (int i = 0; i < 6; i++) {
+            System.out.print("----------------");
+        }
+        System.out.println();
+
+        System.out.printf("| %-13s |", "Array num");
+        for (int i = 0; i < 6; i++) {
+            System.out.printf(" %-13s |", "Columna " + i);
+        }
+        System.out.println();
+
+        System.out.print("-----------------");
+        for (int i = 0; i < 6; i++) {
+            System.out.print("----------------");
+        }
+        System.out.println();
+
+        // Contenido de filas
+        for (int i = 0; i < doub.length; i++) {
+            System.out.printf("| %-13s |", "Fila " + i);
+            for (int j = 0; j < doub[i].length; j++) {
+                if (doub[i][j] == 0.0 && !(i == 0 && j == 0) && !(i == 1 && j == 4)) {
+                    System.out.printf(" %-13s |", "");
                 } else {
-                    System.out.printf("%9.0f |", numeros[i][j]);
+                    System.out.printf(" %-13.0f |", doub[i][j]);
                 }
             }
-            System.out.println(" ");
+            System.out.println();
+
+            // Línea separadora entre filas
+            System.out.print("-----------------");
+            for (int k = 0; k < 6; k++) {
+                System.out.print("----------------");
+            }
+            System.out.println();
         }
-        System.out.println("-----------------------------------------------------------------------------");
     }
 }
