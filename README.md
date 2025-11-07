@@ -7,7 +7,6 @@ Repositorio de programación de Adrián Quirós Romero 1º DAW
 ## PRÁCTICAS
   * [Practica2](practica2)
     * [src/](practica2/src)
-     
   * [Practica3](practica3)
     * [src/](practica3/src)
 <img width="1446" height="1027" alt="R" src="https://github.com/user-attachments/assets/e14df9ec-7beb-4412-a487-cfed050b7603" />
