@@ -8,5 +8,3 @@ Repositorio de programación de Adrián Quirós Romero 1º DAW
 * **Programación**
 * [Practica2](practica2)
   * [src/](practica2/src)
-* [Practica3](practica3)
-  * [src/](practica3/src)
