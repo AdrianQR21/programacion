@@ -1,6 +1,6 @@
-# Programación
+# PROGRAMACIÓN
 Repositorio de programación de Adrián Quirós Romero 1º DAW
-## Datos del alumno
+## DATOS DEL ALUMNO
 * **Nombre:** Adrián
 * **Apellidos:** Quirós Romero
 * **Correo electrónico:** adrianqr21@gmail.com
