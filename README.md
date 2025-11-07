@@ -8,3 +8,4 @@ Repositorio de programación de Adrián Quirós Romero 1º DAW
 * **Programación**
 * [Practica2](practica2)
   * [src/](practica2/src)
+<img width="1446" height="1027" alt="R" src="https://github.com/user-attachments/assets/1b453586-85c0-4f96-b0a1-5a203926f61c" />
