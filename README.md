@@ -1,4 +1,4 @@
-# Programacion
+# Programación
 Repositorio de programación de Adrián Quirós Romero 1º DAW
 ## Datos del alumno
 * **Nombre:** Adrián
