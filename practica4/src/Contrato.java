@@ -1,0 +1,22 @@
+public class Contrato {
+
+        private FechaCreacion;
+        private Medico medico;
+        private Hospital hospital;
+
+        public Contrato(FechaCreacion fechaCreacion, Medico medico, Hospital hospital) {
+            this.fechaCreacion = fechaCreacion;
+            this.medico = medico;
+            this.hospital = hospital;
+        }
+
+        public FechaCreacion getFechaCreacion() {
+            return fechaCreacion; }
+        public void setFechaCreacion(FechaCreacion fechaCreacion) { this.fechaCreacion = fechaCreacion; }
+
+        public Medico getMedico() { return medico; }
+        public void setMedico(Medico medico) { this.medico = medico; }
+
+        public Hospital getHospital() { return hospital; }
+        public void setHospital(Hospital hospital) { this.hospital = hospital; }
+}
