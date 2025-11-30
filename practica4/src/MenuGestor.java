@@ -171,7 +171,7 @@ public class MenuGestor {
         System.out.println("Medico Creado correctamente");
     }
 
-    //--------------------------------------------MODIFICAR MEDICO-----------------------------------------------
+    //MODIFICAR MEDICO
     public void modificarMedico() {
 
         Medico m = pedirMedico();

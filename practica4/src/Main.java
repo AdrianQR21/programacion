@@ -23,7 +23,7 @@ public class Main {
 
         //Creamos las Direcciones con sus Hospitales
         Direccion d1 = new Direccion("Calle Manuel Fdez Caballero", 72, 11406, "Jerez de la Frontera", "Cádiz");
-        Hospital h1 = new Hospital("Hospital Josemi", "CIF123", d1);
+        Hospital h1 = new Hospital("Hospital Taylor Swift ", "CIF123", d1);
 
         Direccion d2 = new Direccion("Calle Jerez", 22, 11406, "Jerez de la Frontera", "Cádiz");
         Hospital h2 = new Hospital("Hospital Falete", "CIF321", d2);
@@ -51,8 +51,8 @@ public class Main {
 
         //Creación de médicos
         Medico m1 = new Medico("12345678E", "Adrian", 25, "Masculino", 2150.00, 2024, a3);
-        Medico m2 = new Medico("92445278L", "Pedro", 26, "Masculino", 1870.00, 2020, a2);
-        Medico m3 = new Medico("56442311W", "Paola", 24, "Masculino", 1350.00, 2021, a1);
+        Medico m2 = new Medico("92445278L", "Paola", 26, "Femenino", 1870.00, 2020, a2);
+        Medico m3 = new Medico("56442311W", "Pedro", 24, "Masculino", 1350.00, 2021, a1);
         a1.incrementarmedicos();
         a2.incrementarmedicos();
         a3.incrementarmedicos();
