@@ -8,19 +8,19 @@ public class Medico {
     private String Sexo;
     private double sueldoBruto;
     private int fechaInicio;
-    private Areas areas;
+    private Area areas;
     private int aniosAntiguedad;
     //CONSTRUCTOR
-    public Medico (String DNI, String nombre, int edad, String sexo, double sueldoBruto, int fechaInicio, Areas areas, int aniosAntiguedad) {
+    public Medico(String DNI, String Nombre, Integer Edad, String Sexo, Double SueldoBruto, Integer FechaInicio, Area area){
         this.DNI = DNI;
         this.nombre = nombre;
         this.Edad = Edad;
         this.Sexo = Sexo;
         this.sueldoBruto = sueldoBruto;
         this.fechaInicio = fechaInicio;
-        this.areas = areas;
         this.aniosAntiguedad = aniosAntiguedad;
-        areas.contadorNumMedicos();
+
+        this.areas = areas;
     }
     // METODOS GET Y SET
 
@@ -57,7 +57,7 @@ public class Medico {
         Sexo = sexo;
     }
 
-    public double getSueldoBruto() {
+    public double getsueldoBruto() {
         return sueldoBruto;
     }
 
@@ -73,11 +73,11 @@ public class Medico {
         this.fechaInicio = fechaInicio;
     }
 
-    public Areas getAreas() {
+    public Area getAreas() {
         return areas;
     }
     // CALCULO SUELDO NETO
-    public void setAreas(Areas areas) {
+    public void setAreas(Area areas) {
         this.areas = areas;
     }
     public double calcularSueldoNeto (double retencion) {
@@ -97,8 +97,27 @@ public class Medico {
         //CALCULAMOS EL PORCENTAJE DE IMPUESTOS QUE ES EL 25%
         return this.sueldoBruto * (25/100);
     }
+    public boolean esMayorDeEdad (int MayoriaDeEdad) {
+        return MayoriaDeEdad >= 18;
+    }
 
-    public boolean (Object obj) {
-        return super.equals(obj);
+    //Cálculo de Aumento
+    public double proximoAumento (double porcentajeAumento, int aniosRequeridos) {
+        if (getAniosAntiguedad() >= aniosRequeridos) {
+            porcentajeAumento = getsueldoBruto() * porcentajeAumento;
+            double Sueldobrutoaumento = getsueldoBruto() + (porcentajeAumento / 100);
+            return Sueldobrutoaumento;
+        } else {
+            return getsueldoBruto();
+        }
+    }
+
+    //Gestión de Area
+    public void cambiarArea(Area nuevaArea) {
+        getAreas().decrementarmedicos();
+        areas.decrementarmedicos();
+        nuevaArea.incrementarmedicos();
+        this.areas = nuevaArea;
     }
 }
+
