@@ -207,7 +207,7 @@ public class MenuGestor {
         }
     }
 
-    //5. Modificar Hospital
+    //MODIFICAR HOSPITAL
     private void modificarHospital() {
         Hospital h = pedirHospital();
         if (h == null) {
@@ -223,7 +223,7 @@ public class MenuGestor {
         sc.nextLine();
 
     }
-    //6. Calcular Antigüedad
+    //CALCULAR ANTIGÜEDAD
     private void calcularAntiguedad() {
         Medico m = pedirMedico();
         if (m == null) {
@@ -234,7 +234,7 @@ public class MenuGestor {
         System.out.println("Años de antiguedad: " + m.getAniosAntiguedad());
     }
 
-    //7. Calcular Sueldo Neto
+    //CALCULAR SUELDO NETO
     private void calcularSueldoNeto() {
         Medico m = pedirMedico();
         if (m == null) {
@@ -248,7 +248,7 @@ public class MenuGestor {
         System.out.println("Sueldo Neto: "+ calculo);
     }
 
-    //8. Comprobar Edad
+    //COMPROBAR EDAD
     private void comprobarEdad() {
         Medico m = pedirMedico();
         if (m == null) {
@@ -260,7 +260,7 @@ public class MenuGestor {
         System.out.println("El Médico"+m.getNombre()+" es mayor o igual "+ m.esMayorDeEdad(MayoriaDeEdad));
     }
 
-    //9. Proporción de Médicos
+    //PROPORCIÓN DE MEDICOS
     private void proporcionMedicos() {
         Hospital h = pedirHospital();
         if (h == null) {
@@ -279,7 +279,7 @@ public class MenuGestor {
         System.out.println(proporcion);
     }
 
-    //10. Capacidad de Área
+    //CAPACIDAD DE AREA
     private void capacidadAreas() {
         Area a = pedirArea();
         System.out.print("Cual es la capacidad máxima del Area? ");
@@ -288,7 +288,7 @@ public class MenuGestor {
         System.out.println("La capacidad del Area es: "+ capacidad);
     }
 
-    //11. Comparar Áreas
+    //COMPARAR AREA
     private void compararAreas() {
         Area a = pedirArea();
         Area b = pedirArea();
@@ -299,7 +299,7 @@ public class MenuGestor {
         System.out.println(a.compararMedicos(b));
     }
 
-    //12. Contratos por Año
+    //CONTRATOS POR AÑO
     private void contratosAño() {
         System.out.println("Escribe un año: ");
         int fecha = sc.nextInt();
@@ -310,7 +310,7 @@ public class MenuGestor {
         }
     }
 
-    //Funciones para código más claro
+    //Funciones para poder ver el código más claro
     public Medico pedirMedico() {
         System.out.print("Introduce el DNI del médico: ");
         String dni = sc.nextLine();
