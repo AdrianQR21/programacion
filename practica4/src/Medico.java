@@ -1,4 +1,5 @@
 import java.time.Year;
+import java.util.ArrayList;
 
 public class Medico {
     // ATRIBUTOS
@@ -10,6 +11,7 @@ public class Medico {
     private int fechaInicio;
     private Area areas;
     private int aniosAntiguedad;
+    private ArrayList<Paciente> pacientes;
     //CONSTRUCTOR
     public Medico(String DNI, String Nombre, Integer Edad, String Sexo, Double SueldoBruto, Integer FechaInicio, Area area){
         this.DNI = DNI;
@@ -19,11 +21,16 @@ public class Medico {
         this.sueldoBruto = sueldoBruto;
         this.fechaInicio = fechaInicio;
         this.aniosAntiguedad = aniosAntiguedad;
-
+        this.pacientes = new ArrayList<>();
         this.areas = areas;
     }
     // METODOS GET Y SET
-
+    public void agregarPaciente (Paciente Paciente ) {
+        this.pacientes.add(Paciente);
+    }
+    public int numeroPaciente() {
+        return this.pacientes.size();
+    }
 
     public String getDNI() {
         return DNI;

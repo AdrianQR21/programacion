@@ -8,8 +8,8 @@ public class Main {
     public static ArrayList<Medico> medicos = new ArrayList<>();
     public static ArrayList<Contrato> contratos = new ArrayList<>();
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+   public static void main(String[] args) {
+    /*     Scanner sc = new Scanner(System.in);
 
         //Precargar datos iniciales
         CargarDatosIniciales();
@@ -17,9 +17,9 @@ public class Main {
         //Ejecutar menú inicial
         MenuGestor gestor = new MenuGestor();
         gestor.ejecutarMenuPrincipal();
-    }
 
-    public static void CargarDatosIniciales() {
+
+    public static void CargarDatosIniciales() {}*/
 
         //Creamos las Direcciones con sus Hospitales
         Direccion d1 = new Direccion("Calle Manuel Fdez Caballero", 72, 11406, "Jerez de la Frontera", "Cádiz");
@@ -58,6 +58,8 @@ public class Main {
         a3.incrementarmedicos();
 
         //Añadimos los Médicos
+
+
         medicos.add(m1);
         medicos.add(m2);
         medicos.add(m3);
@@ -71,6 +73,15 @@ public class Main {
         contratos.add(c1);
         contratos.add(c2);
         contratos.add(c3);
+
+        Area Cardiologia = new Area("Cardiología");
+        Medico medico1 = new Medico("12345678A", "Adrian",25, "A", 50000.25 , 2005, Cardiologia);
+
+        Paciente paciente1 = new Paciente("11111111A", "Juan");
+        Paciente paciente2 = new Paciente("22222222B", "Ana");
+
+        medico1.agregarPaciente(paciente1);
+        medico1.agregarPaciente(paciente2);
     }
     //Metodos utilitarios de busqueda
 

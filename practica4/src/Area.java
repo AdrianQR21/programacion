@@ -12,6 +12,9 @@ public class Area {
         this.hospital = hospital;
         this.numMedicos = 0;
     }
+
+    public Area(String cardiología) {
+    }
     // UTILIZAMOS SET Y GET
 
     //NOMBRE
