@@ -1,7 +1,7 @@
-package com.juego.razas;
+package com.juego.Razas;
 
-public abstract class Raza {
-    // Es abstracto ya que raza sirve como plantilla o base de las subclases
+public interface  Raza {
+  /*  // Es abstracto ya que raza sirve como plantilla o base de las subclases
     protected String nombre;
     protected int fuerza;
     protected int inteligencia;
@@ -18,24 +18,13 @@ public abstract class Raza {
         this.destreza = destreza;
         this.vidaBase = vidaBase;
         this.especialidad = especialidad;
+    }*/
+    String getNombre();
+    int getFuerza();
+    int getInteligencia();
+    int getDestreza();
+    int getVidaBase();
+    String getEspecialidad();
+
     }
 
-    public int getFuerza() {
-        return fuerza;
-    }
-    public int getInteligencia() {
-        return inteligencia;
-    }
-    public int getDestreza() {
-        return destreza;
-    }
-    public int getVidaBase() {
-        return vidaBase;
-    }
-    public String getNombre() {
-        return nombre;
-    }
-    public String getEspecialidad() {
-        return especialidad;
-    }
-}
