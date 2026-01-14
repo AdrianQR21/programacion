@@ -9,26 +9,26 @@ public class Enano implements Raza {
 
     @Override
     public int getFuerza() {
-        return 0;
+        return 7;
     }
 
     @Override
     public int getInteligencia() {
-        return 0;
+        return 4;
     }
 
     @Override
     public int getDestreza() {
-        return 0;
+        return 4;
     }
 
     @Override
     public int getVidaBase() {
-        return 0;
+        return 110;
     }
 
     @Override
     public String getEspecialidad() {
-        return "";
+        return "Resistencia: Ideal para Guerreros y Paladines.";
     }
 }

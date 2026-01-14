@@ -10,26 +10,26 @@ public class Elfo implements Raza {
 
     @Override
     public int getFuerza() {
-        return 0;
+        return 4;
     }
 
     @Override
     public int getInteligencia() {
-        return 0;
+        return 6;
     }
 
     @Override
     public int getDestreza() {
-        return 0;
+        return 7;
     }
 
     @Override
     public int getVidaBase() {
-        return 0;
+        return 90;
     }
 
     @Override
     public String getEspecialidad() {
-        return "";
+        return "Agilidad: Ideal para Pícaros, Magos y Bardos.";
     }
 }
