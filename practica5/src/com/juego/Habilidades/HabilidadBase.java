@@ -1,4 +1,4 @@
-package com.juego.habilidades;
+package com.juego.Habilidades;
 
 import com.juego.Modelo.Personaje;
 
