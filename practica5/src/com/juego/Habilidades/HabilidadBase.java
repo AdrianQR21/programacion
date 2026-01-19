@@ -8,4 +8,5 @@ public interface HabilidadBase {
     int escaladoPoder(Personaje pj);
     void infoHabilidad();
     void nombreHabilidad();
+
 }
