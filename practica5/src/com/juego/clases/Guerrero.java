@@ -5,7 +5,7 @@ import com.juego.habilidades.habilidad;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Guerrero implements clase{
+public class Guerrero implements clase {
     // ... (atributos y constructor sin cambios)
     private String nombre;
     private int bonifFuerza;

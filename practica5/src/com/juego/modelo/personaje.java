@@ -5,6 +5,7 @@ import com.juego.razas.Raza;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class personaje {
     private String nombre;
     private int fuerza;

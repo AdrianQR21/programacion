@@ -1,6 +1,7 @@
 package com.juego.habilidades;
 import com.juego.modelo.personaje;
 
+
 public interface habilidad {
 
 

@@ -5,7 +5,6 @@ import com.juego.habilidades.habilidad;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
-
 public class Bardo implements clase {
     // Esta clase guarda los datos
     private String nombre;

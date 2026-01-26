@@ -1,7 +1,7 @@
 package com.juego.habilidades;
 import com.juego.modelo.personaje;
 
-public class curar implements habilidad{
+public class curar implements habilidad {
     private int usos = 3;
 
     // Devuelve el nombre de la habilidad

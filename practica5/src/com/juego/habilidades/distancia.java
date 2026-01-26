@@ -1,6 +1,7 @@
 package com.juego.habilidades;
 import com.juego.modelo.personaje;
 
+
 public class distancia implements habilidad {
     private int usos = 1;
 

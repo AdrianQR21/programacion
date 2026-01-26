@@ -1,5 +1,4 @@
 package com.juego.clases;
-
 import com.juego.habilidades.habilidad;
 
 import java.util.ArrayList;

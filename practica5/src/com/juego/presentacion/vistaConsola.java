@@ -1,8 +1,6 @@
 package com.juego.presentacion;
-
 import com.juego.habilidades.habilidad;
 import com.juego.modelo.personaje;
-
 import java.util.Scanner;
 
 public class vistaConsola implements Vista {

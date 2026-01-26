@@ -1,5 +1,4 @@
 package com.juego.modelo;
-
 import com.juego.habilidades.habilidad;
 import java.util.Scanner;
 

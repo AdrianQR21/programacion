@@ -1,7 +1,7 @@
 package com.juego.habilidades;
 import com.juego.modelo.personaje;
 
-public class cuerpo_a_cuerpo implements habilidad{
+public class cuerpo_a_cuerpo implements habilidad {
     private int usos = 5;
 
     @Override

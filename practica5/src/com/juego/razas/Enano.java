@@ -1,5 +1,6 @@
 package com.juego.razas;
 
+
 public class Enano implements Raza {
     @Override
     public int getFuerza() { return 7;}

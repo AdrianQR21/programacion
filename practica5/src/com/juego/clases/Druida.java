@@ -1,10 +1,8 @@
 package com.juego.clases;
-
 import com.juego.habilidades.habilidad;
-
 import java.util.ArrayList;
 
-public class Druida implements clase {
+public class Druida implements clase{
     // Esta clase guarda los datos
     private String nombre;
     private int bonifFuerza;

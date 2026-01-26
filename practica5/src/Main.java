@@ -6,6 +6,7 @@ import com.juego.razas.*;
 
 import java.util.Arrays;
 
+
 public class Main {
   public static void main(String[] args) {
     System.out.println("¡Bienvenido al juego de combate por turnos!");
@@ -22,7 +23,7 @@ public class Main {
 
     // --- Creación del Personaje 2: Un Mago Elfo ---
     personaje p2 = new personaje(
-            "Adrian, el Mago", // Vamos a imaginar que Legolas es mago para el ejemplo
+            "Adrian, el Mago", // Vamos a imaginar que Adrian es mago para el ejemplo
             new Elfo(),
             new Mago(),
             new Mago().getHabilidades()
