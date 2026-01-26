@@ -1,34 +1,35 @@
-package com.juego.Razas;
+package com.juego.razas;
 
-public class Enano implements Raza {
+public class Humano implements Raza {
 
     @Override
     public String getNombre() {
-        return "Enano";
+        return "Humano";
     }
 
     @Override
     public int getFuerza() {
-        return 7;
+        return 5;
     }
 
     @Override
     public int getInteligencia() {
-        return 4;
+        return 5;
     }
 
     @Override
     public int getDestreza() {
-        return 4;
+        return 5;
     }
 
     @Override
     public int getVidaBase() {
-        return 110;
+        return 100;
     }
 
     @Override
     public String getEspecialidad() {
-        return "Resistencia: Ideal para Guerreros y Paladines.";
+        return "Equilibrado: Versátil para cualquier clase.";
     }
 }
+

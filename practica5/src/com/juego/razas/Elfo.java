@@ -1,34 +1,33 @@
-package com.juego.Razas;
+package com.juego.razas;
 
-public class Humano implements Raza {
-
+public class Elfo implements Raza {
     @Override
     public String getNombre() {
-        return "Humano";
+        return "Elfo";
     }
 
     @Override
     public int getFuerza() {
-        return 5;
+        return 4;
     }
 
     @Override
     public int getInteligencia() {
-        return 5;
+        return 6;
     }
 
     @Override
     public int getDestreza() {
-        return 5;
+        return 7;
     }
 
     @Override
     public int getVidaBase() {
-        return 100;
+        return 90;
     }
 
     @Override
     public String getEspecialidad() {
-        return "Equilibrado: Versátil para cualquier clase";
+        return "Agilidad: Ideal para Pícaros, Magos y Bardos.";
     }
 }
