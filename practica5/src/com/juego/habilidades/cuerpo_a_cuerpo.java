@@ -16,7 +16,7 @@ public class cuerpo_a_cuerpo implements habilidad {
     // Aplica el efecto de la habilidad
     public void usar(personaje origen, personaje objetivo) {
         if (usos > 0) {
-            int daño = origen.getFuerza() * 2;
+            int daño = origen.getFuerza() * 8;
             objetivo.recibirDaño(daño);
             usos--;
         }

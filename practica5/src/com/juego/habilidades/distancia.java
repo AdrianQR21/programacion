@@ -17,7 +17,7 @@ public class distancia implements habilidad {
     // Aplica el efecto de la habilidad
     public void usar(personaje origen, personaje objetivo) {
         if (usos > 0) {
-            int daño = origen.getDestreza() * 4;
+            int daño = origen.getDestreza() * 9;
             objetivo.recibirDaño(daño);
             usos--;
         }
