@@ -1,4 +1,5 @@
-package com.juego.Razas;
+package com.juego.razas;
+
 
 public class Humano implements Raza {
 
@@ -29,6 +30,7 @@ public class Humano implements Raza {
 
     @Override
     public String getEspecialidad() {
-        return "Equilibrado: Versátil para cualquier clase";
+        return "Equilibrado: Versátil para cualquier clase.";
     }
 }
+

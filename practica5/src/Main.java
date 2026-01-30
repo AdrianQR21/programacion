@@ -1,13 +1,40 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+import com.juego.clases.*;
+import com.juego.habilidades.*;
+import com.juego.modelo.combate;
+import com.juego.modelo.personaje;
+import com.juego.razas.*;
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
-    }
+import java.util.Arrays;
+
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("¡Bienvenido al juego de combate por turnos!");
+    System.out.println("Preparando a los luchadores...");
+
+    // --- Creación del Personaje 1: Un Guerrero Enano ---
+    personaje p1 = new personaje(
+            "Josemi, el Guerrero",
+            new Enano(),
+            new Guerrero(),
+            // Las clases ahora proporcionan las habilidades directamente
+            new Guerrero().getHabilidades()
+    );
+
+    // --- Creación del Personaje 2: Un Mago Elfo ---
+    personaje p2 = new personaje(
+            "Adrian, el Mago", // Vamos a imaginar que Adrian es mago para el ejemplo
+            new Elfo(),
+            new Mago(),
+            new Mago().getHabilidades()
+    );
+
+    System.out.println("\n¡Luchadores listos!");
+    System.out.println(p1.getNombre() + " ha entrado en la arena.");
+    System.out.println(p2.getNombre() + " ha entrado en la arena.");
+
+    // --- Iniciar el combate ---
+    combate nuevoCombate = new combate(p1, p2);
+    nuevoCombate.iniciar();
+  }
 }
