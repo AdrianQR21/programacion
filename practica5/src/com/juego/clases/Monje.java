@@ -1,32 +1,25 @@
 package com.juego.clases;
+import com.juego.habilidades.cuerpo_a_cuerpo;
 import com.juego.habilidades.habilidad;
-
 import java.util.ArrayList;
+import java.util.Arrays;
 
-public class Monje implements clase{
-    // Esta clase guarda los datos
-    private String nombre;
-    private int bonifFuerza;
-    private int bonifInteligencia;
-    private int bonifDestreza;
-    private int vidaMaxima;
+public class Monje implements clase {
+    private String nombre = "Monje";
+    private int bonifFuerza = 2;
+    private int bonifInteligencia = 0;
+    private int bonifDestreza = 1;
+    private int vidaMaxima = 110;
 
-    // Iniciamos el constructor para inicializar los datos del Monje
-    public Monje() {
-        this.nombre = "Monje";
-        this.bonifFuerza = 2;
-        this.bonifInteligencia = 0;
-        this.bonifDestreza = 1;
-        this.vidaMaxima = 110;
-    }
-    // Iniciamos los getter para que haya más flexibilidad en los cambios
-    public String getNombre() { return nombre;}
-    public int getBonifFuerza() { return bonifFuerza;}
-    public int getBonifInteligencia() { return bonifInteligencia;}
-    public int getBonifDestreza() { return bonifDestreza;}
-    public int getVidaMaxima() { return vidaMaxima;}
+    public String getNombre() { return nombre; }
+    public int getBonifFuerza() { return bonifFuerza; }
+    public int getBonifInteligencia() { return bonifInteligencia; }
+    public int getBonifDestreza() { return bonifDestreza; }
+    public int getVidaMaxima() { return vidaMaxima; }
+
     @Override
-    public ArrayList<habilidad> getHabilidades() { return null;}
-
-
+    public ArrayList<habilidad> getHabilidades() {
+        return new ArrayList<>(Arrays.asList(new cuerpo_a_cuerpo()));
+    }
 }
+

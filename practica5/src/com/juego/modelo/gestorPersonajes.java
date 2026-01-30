@@ -1,13 +1,12 @@
 package com.juego.modelo;
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class gestorPersonajes {
-    private ArrayList<personaje> personajes = new ArrayList<>();
-    public ArrayList<personaje> getPersonajes() { return personajes;}
+    private ArrayList<com.juego.modelo.personaje> personaje = new ArrayList<>();
+    public ArrayList<com.juego.modelo.personaje> getPersonajes() { return personaje;}
 
-    public void agregarPersonaje(personaje p) {
-        personajes.add(p);
+    public void agregarPersonaje(com.juego.modelo.personaje p) {
+        personaje.add(p);
     }
 }

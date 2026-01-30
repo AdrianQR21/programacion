@@ -16,7 +16,7 @@ public class curar implements habilidad {
     @Override
     public void usar(personaje origen, personaje objetivo) {
         if (usos > 0) {
-            objetivo.curar(origen.getInteligencia() * 2);
+            objetivo.curar(origen.getInteligencia() * 4);
             usos--;
         }
     }

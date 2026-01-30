@@ -1,38 +1,25 @@
 package com.juego.clases;
+import com.juego.habilidades.cuerpo_a_cuerpo;
 import com.juego.habilidades.habilidad;
 import java.util.ArrayList;
+import java.util.Arrays;
 
-public class Druida implements clase{
-    // Esta clase guarda los datos
-    private String nombre;
-    private int bonifFuerza;
-    private int bonifInteligencia;
-    private int bonifDestreza;
-    private int vidaMaxima;
+public class Druida implements clase {
+    private String nombre = "Druida";
+    private int bonifFuerza = 2;
+    private int bonifInteligencia = 1;
+    private int bonifDestreza = 0;
+    private int vidaMaxima = 100;
 
-    // Iniciamos el constructor para inicializar los datos del Druida
-    public Druida() {
-        this.nombre = "Druida";
-        this.bonifFuerza = 2;
-        this.bonifInteligencia = 1;
-        this.bonifDestreza = 0;
-        this.vidaMaxima = 100;
-    }
-    // Iniciamos los getter para que haya más flexibilidad en los cambios
-    @Override
-    public String getNombre() { return nombre;}
-    @Override
-    public int getBonifFuerza() { return bonifFuerza;}
-    @Override
-    public int getBonifInteligencia() { return bonifInteligencia;}
-    @Override
-    public int getBonifDestreza() { return bonifDestreza;}
-    @Override
-    public int getVidaMaxima() { return vidaMaxima;}
+    public String getNombre() { return nombre; }
+    public int getBonifFuerza() { return bonifFuerza; }
+    public int getBonifInteligencia() { return bonifInteligencia; }
+    public int getBonifDestreza() { return bonifDestreza; }
+    public int getVidaMaxima() { return vidaMaxima; }
+
     @Override
     public ArrayList<habilidad> getHabilidades() {
-        return null;
+        return new ArrayList<>(Arrays.asList(new cuerpo_a_cuerpo()));
     }
-
-
 }
+
