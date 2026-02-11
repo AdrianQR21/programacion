@@ -34,10 +34,10 @@ public class Bloque1 {
     public void BolsaOro(){
         System.out.println("---Ejercicio 3---");
         HashMap<String, Integer> bolsaOro = new HashMap<>();
-        bolsaOro.put("Jaime",50);
-        bolsaOro.put("Adrian",20);
-        bolsaOro.put("Ismael",30);
-        String nombre = "Ismael";
+        bolsaOro.put("Raphinha",50);
+        bolsaOro.put("Lamine Yamal",20);
+        bolsaOro.put("Lewandowski",30);
+        String nombre = "RaphinhaS";
         System.out.println("Bolsa de oro: el oro de " + nombre + " es " + bolsaOro.get(nombre));
         System.out.println("------------------------------------");
     }
