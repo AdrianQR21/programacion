@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 
-// Clase simple de datos
 public class Ingredientes {
     private String nombre;
     private double cantidadDisponible;

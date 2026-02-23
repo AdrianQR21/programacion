@@ -10,7 +10,7 @@ public class LineaPedido {
     }
 
     public void calcularSubTotal() {
-        // Obtenemos el precio actual del producto y multiplicamos
+        // Obtenemos el precio del producto y multiplicamos
         this.subtotal = this.producto.getPrecio() * this.cantidad;
     }
 
