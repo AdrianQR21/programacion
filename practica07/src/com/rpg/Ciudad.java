@@ -1,4 +1,4 @@
-package com.rpg.model;
+package com.rpg;
 
 public class Ciudad {
     String nombre;

@@ -1,6 +1,6 @@
 package utils;
 
-import com.rpg.model.Ciudad;
+import com.rpg.Ciudad;
 
 import java.io.IOException;
 import java.nio.file.Files;

@@ -1,4 +1,4 @@
-package com.rpg.model;
+package com.rpg;
 
 import java.util.List;
 
