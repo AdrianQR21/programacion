@@ -1,4 +1,4 @@
-package utils;
+package com.rpg.utils;
 
 import handler.DatoInvalidoException;
 import handler.FormatoInvalidoException;
