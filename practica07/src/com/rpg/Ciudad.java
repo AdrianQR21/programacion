@@ -1,14 +1,14 @@
 package com.rpg;
 
 public class Ciudad {
-    String nombre;
-    int población;
-    String clima;
-    int nivelRiesgo;
+    private String nombre;
+    private int poblacion;
+    private String clima;
+    private int nivelRiesgo;
 
-    public Ciudad(String nombre, int población, String clima, int nivelRiesgo) {
+    public Ciudad(String nombre, int poblacion, String clima, int nivelRiesgo) {
         this.nombre = nombre;
-        this.población = población;
+        this.poblacion = poblacion;
         this.clima = clima;
         this.nivelRiesgo = nivelRiesgo;
     }
@@ -21,12 +21,12 @@ public class Ciudad {
         this.nombre = nombre;
     }
 
-    public int getPoblación() {
-        return población;
+    public int getPoblacion() {
+        return poblacion;
     }
 
-    public void setPoblación(int población) {
-        this.población = población;
+    public void setPoblacion(int poblacion) {
+        this.poblacion = poblacion;
     }
 
     public String getClima() {
@@ -43,5 +43,15 @@ public class Ciudad {
 
     public void setNivelRiesgo(int nivelRiesgo) {
         this.nivelRiesgo = nivelRiesgo;
+    }
+
+    @Override
+    public String toString() {
+        return "Ciudad{" +
+                "nombre='" + nombre + '\'' +
+                ", poblacion=" + poblacion +
+                ", clima='" + clima + '\'' +
+                ", nivelRiesgo=" + nivelRiesgo +
+                '}';
     }
 }
