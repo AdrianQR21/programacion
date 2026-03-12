@@ -1,11 +1,9 @@
-package com.rpg.utils;
+package utils;
 
 import handler.DatoInvalidoException;
 import handler.FormatoInvalidoException;
-import com.rpg.Ciudad;
-import java.time.LocalDate;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
+import model.Ciudad;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;

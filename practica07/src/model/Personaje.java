@@ -1,10 +1,7 @@
-package com.rpg;
+package model;
 
-import handler.DatoInvalidoException;
 import utils.LoggerCustom;
 
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Personaje {

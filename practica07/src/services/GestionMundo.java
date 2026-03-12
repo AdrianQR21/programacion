@@ -2,9 +2,9 @@ package services;
 
 import handler.DatoInvalidoException;
 import handler.RecursoNoEncontradoException;
-import com.rpg.Ciudad;
-import com.rpg.Item;
-import com.rpg.Personaje;
+import model.Ciudad;
+import model.Item;
+import model.Personaje;
 import utils.JsonHelper;
 import utils.LoggerCustom;
 import utils.TxtHelper;

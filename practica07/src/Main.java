@@ -1,11 +1,7 @@
-import com.rpg.Item;
-import com.rpg.Personaje;
-import services.GestionMundo;
-import utils.JsonHelper;
-import utils.TxtHelper;
+package com.rpg.utils;
 
-import java.util.List;
-import java.util.Scanner;
+import services.GestionMundo;
+
 
 public class Main {
     public static void main(String[] args) {
