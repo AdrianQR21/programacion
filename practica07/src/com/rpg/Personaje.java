@@ -1,18 +1,23 @@
 package com.rpg;
 
+import handler.DatoInvalidoException;
+import utils.LoggerCustom;
+
+import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Personaje {
-    String nombre;
-    String raza;
-    int nivel;
-    List<Item> equipo;
+    private String nombre;
+    private String raza;
+    private int nivel;
+    private List<String> equipoIds;
 
-    public Personaje(String nombre, String raza, List<Item> equipo, int nivel) {
+    public Personaje(String nombre, String raza, int nivel, List<String> equipoIds) {
         this.nombre = nombre;
         this.raza = raza;
         this.nivel = nivel;
-        this.equipo = equipo;
+        this.equipoIds = equipoIds;
     }
 
     public String getNombre() {
@@ -39,11 +44,12 @@ public class Personaje {
         this.nivel = nivel;
     }
 
-    public List<Item> getEquipo() {
-        return equipo;
+    public List<String> getEquipoIds() {
+        return equipoIds;
     }
 
-    public void setEquipo(List<Item> equipo) {
-        this.equipo = equipo;
+    public void setEquipoIds(List<String> equipoIds) {
+        this.equipoIds = equipoIds;
     }
+
 }

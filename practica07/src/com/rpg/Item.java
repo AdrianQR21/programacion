@@ -1,34 +1,24 @@
 package com.rpg;
 
 public class Item {
-    int id;
-    String nombre;
-    String tipo;
-    int valor;
+    private String id;
+    private String nombre;
+    private String tipo;
+    private int valor;
 
-    public Item(int id, String nombre, String tipo, int valor) {
+    public Item(String id, String nombre, String tipo, int valor) {
         this.id = id;
         this.nombre = nombre;
         this.tipo = tipo;
         this.valor = valor;
     }
-    //Métodos
 
-
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
     }
 
     public String getTipo() {
@@ -39,11 +29,29 @@ public class Item {
         this.tipo = tipo;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     public int getValor() {
         return valor;
     }
 
     public void setValor(int valor) {
         this.valor = valor;
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "id='" + id + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", tipo='" + tipo + '\'' +
+                ", valor=" + valor +
+                '}';
     }
 }
