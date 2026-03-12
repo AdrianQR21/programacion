@@ -65,5 +65,5 @@ public class Combate {
         vista.anunciarGanador(ganador);
         vista.mostrarEstado(p1, p2); // Muestra el estado final
     }
-}{
 }
+
