@@ -33,7 +33,7 @@ public class JsonHelper {
 
     //Creamos el writeList al que se le pasa la ruta y una lista generica
     public <T> void writeList(String path, List<T> lista)  {
-        //Creamos el writer
+        //Creamos el writ
         try(Writer writer = new FileWriter(path)) {
             //Creamos el gson
             Gson gson = new Gson();
