@@ -2,6 +2,7 @@ package services;
 
 import handler.DatoInvalidoException;
 import handler.RecursoNoEncontradoException;
+import handler.SobrecargaEquipamientoException;
 import model.Ciudad;
 import model.Item;
 import model.Personaje;
@@ -92,6 +93,9 @@ public class GestionMundo {
         System.out.println("Nivel:");
         int nivel = s.nextInt();
         s.nextLine();
+        
+        int fuerza = nivel * 2;
+        double cargaMaxima = fuerza * 5.0;
 
         List<Item> catalogo = json.readList("practica07/Ficheros/items.json", Item.class);
 
@@ -101,16 +105,23 @@ public class GestionMundo {
         }
 
         ArrayList<String> equipo = new ArrayList<>();
+        double pesoActual = 0.0;
         boolean acabar;
         String id;
         try {
             do {
                 acabar = false;
-                System.out.println("Item por id:");
+                System.out.println("Item por id (Peso: " + pesoActual + "/" + cargaMaxima + "):");
                 id = s.nextLine();
 
                 if(items.containsKey(id)) {
+                    Item item = items.get(id);
+                    if (pesoActual + item.getPeso() > cargaMaxima) {
+                        throw new SobrecargaEquipamientoException("El item " + item.getNombre() + " excede la carga máxima.");
+                    }
+                    
                     equipo.add(id);
+                    pesoActual += item.getPeso();
                     System.out.println("Item agregado, añadir otro? n para salir");
                     id = s.nextLine();
 
@@ -122,7 +133,8 @@ public class GestionMundo {
                     throw new RecursoNoEncontradoException("El item con id "+id+" no existe");
                 }
             } while(!acabar);
-        } catch (RecursoNoEncontradoException e) {
+        } catch (RecursoNoEncontradoException | SobrecargaEquipamientoException e) {
+            System.out.println(e.getMessage());
             LoggerCustom.log("["+ LocalDateTime.now()+"] ERROR: "+e.getClass().getSimpleName()+" - "+e.getMessage());
         }
 

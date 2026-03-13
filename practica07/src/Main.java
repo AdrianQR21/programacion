@@ -1,4 +1,3 @@
-package com.rpg.utils;
 
 import services.GestionMundo;
 

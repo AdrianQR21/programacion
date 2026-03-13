@@ -3,14 +3,13 @@ package model;
 public class Item {
     private String id;
     private String nombre;
-    private String tipo;
-    private int valor;
+    private double peso; // Nuevo atributo necesario
 
-    public Item(String id, String nombre, String tipo, int valor) {
+    // Constructor vacío para Gson o constructor completo
+    public Item(String id, String nombre, double peso) {
         this.id = id;
         this.nombre = nombre;
-        this.tipo = tipo;
-        this.valor = valor;
+        this.peso = peso;
     }
 
     public String getId() {
@@ -21,14 +20,6 @@ public class Item {
         this.id = id;
     }
 
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
     public String getNombre() {
         return nombre;
     }
@@ -36,22 +27,12 @@ public class Item {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
-    public int getValor() {
-        return valor;
+    // añadimo el nuevo atributo peso
+    public double getPeso() {
+        return peso;
     }
 
-    public void setValor(int valor) {
-        this.valor = valor;
-    }
-
-    @Override
-    public String toString() {
-        return "Item{" +
-                "id='" + id + '\'' +
-                ", nombre='" + nombre + '\'' +
-                ", tipo='" + tipo + '\'' +
-                ", valor=" + valor +
-                '}';
+    public void setPeso(double peso) {
+        this.peso = peso;
     }
 }

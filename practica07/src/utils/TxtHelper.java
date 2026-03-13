@@ -17,7 +17,7 @@ public class TxtHelper {
     public List<Ciudad> cargarFichero() {
         try{
             //Creamos una lista String de todas las lineas del archivo que le pasamos
-            List<String> lineas = Files.readAllLines(Paths.get("practica7/Ficheros/ciudades.txt"));
+            List<String> lineas = Files.readAllLines(Paths.get("practica07/Ficheros/ciudades.txt"));
             try {
                 if(lineas.isEmpty()) {
                     System.out.println("ciudades.txt vacio");

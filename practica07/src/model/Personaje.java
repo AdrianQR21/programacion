@@ -9,12 +9,14 @@ public class Personaje {
     private String raza;
     private int nivel;
     private List<String> equipoIds;
+    private int fuerza;
 
     public Personaje(String nombre, String raza, int nivel, List<String> equipoIds) {
         this.nombre = nombre;
         this.raza = raza;
         this.nivel = nivel;
         this.equipoIds = equipoIds;
+        this.fuerza = nivel *2;
     }
 
     public String getNombre() {
