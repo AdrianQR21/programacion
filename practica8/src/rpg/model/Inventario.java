@@ -1,12 +1,12 @@
 package rpg.model;
 
-public class InventarioDAO {
+public class Inventario {
 
     private Integer id_personaje;
     private Integer id_item;
     private Integer cantidad;
 
-    public InventarioDAO(Integer id_personaje, Integer id_item, Integer cantidad){
+    public Inventario(Integer id_personaje, Integer id_item, Integer cantidad){
         this.id_personaje = id_personaje;
         this.id_item = id_item;
         this.cantidad = cantidad;

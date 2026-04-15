@@ -1,11 +1,11 @@
 package rpg.model;
 
-public class ClaseDAO {
+public class Clase {
 
     private Integer id;
     private String nombre;
 
-    public ClaseDAO(Integer id, String nombre){
+    public Clase(Integer id, String nombre){
         this.id = id;
         this.nombre = nombre;
     }

@@ -1,13 +1,13 @@
 package rpg.model;
 
-public class RazaDAO {
+public class Raza {
 
     private Integer id;
     private String nombre;
     private Integer bonificador_vida;
     private Integer bonificador_fuerza;
 
-    public RazaDAO(Integer id, String nombre, Integer bonificado_vida, Integer bonificador_fuerza) {
+    public Raza(Integer id, String nombre, Integer bonificado_vida, Integer bonificador_fuerza) {
         this.id = id;
         this.nombre = nombre;
         this.bonificador_vida = bonificado_vida;

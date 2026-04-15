@@ -1,13 +1,13 @@
 package rpg.model;
 
-public class ItemDAO {
+public class Item {
 
     private Integer id;
     private String nombre;
     private Integer bonificador_vida;
     private Integer bonificador_fuerza;
 
-    public ItemDAO(Integer id, String nombre, Integer bonificador_vida, Integer bonificador_fuerza) {
+    public Item(Integer id, String nombre, Integer bonificador_vida, Integer bonificador_fuerza) {
         this.id = id;
         this.nombre = nombre;
         this.bonificador_vida = bonificador_vida;

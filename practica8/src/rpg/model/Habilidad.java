@@ -1,6 +1,6 @@
 package rpg.model;
 
-public class HabilidadDAO {
+public class Habilidad {
 
     private Integer id;
     private String nombre;
@@ -8,7 +8,7 @@ public class HabilidadDAO {
     private Integer usos_maximos;
     private Integer id_clase;
 
-    public HabilidadDAO(Integer id, String nombre, Integer danio_base, Integer usos_maximos, Integer id_clase){
+    public Habilidad(Integer id, String nombre, Integer danio_base, Integer usos_maximos, Integer id_clase){
         this.id = id;
         this.nombre = nombre;
         this.danio_base = danio_base;

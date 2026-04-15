@@ -1,12 +1,12 @@
 package rpg.model;
 
-public class CiudadDAO {
+public class Ciudad {
 
     private Integer id;
     private String nombre;
     private Integer nivel_minimo_acceso;
 
-    public CiudadDAO(Integer id, String nombre, Integer nivel_minimo_acceso){
+    public Ciudad(Integer id, String nombre, Integer nivel_minimo_acceso){
         this.id = id;
         this.nombre = nombre;
         this.nivel_minimo_acceso = nivel_minimo_acceso;
